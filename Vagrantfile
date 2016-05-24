@@ -24,7 +24,7 @@ end
 
 Vagrant.configure("2") do |config|
 
-    custom_config
+    custom_config = parse_config
 
     config.vm.box = "scotch/box"
     config.vm.network :private_network, ip: custom_config['ip']
